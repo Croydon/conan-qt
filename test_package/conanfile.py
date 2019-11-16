@@ -13,7 +13,7 @@ class TestPackageConan(ConanFile):
         if tools.os_info.is_windows and self.settings.compiler == "Visual Studio":
             self.build_requires("jom_installer/1.1.2@bincrafters/stable")
         if not tools.which("meson"):
-            self.build_requires("meson_installer/0.50.0@bincrafters/stable")
+            self.build_requires("meson/0.52.0")
 
     def _build_with_qmake(self):
         tools.mkdir("qmake_folder")
