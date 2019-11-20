@@ -8,4 +8,5 @@ resources:
 jobs:
 - template: .ci/azure.yml@templates
   parameters:
+    appleClangVersions: "10"
     splitByBuildTypes: "true"
