@@ -10,3 +10,4 @@ jobs:
   parameters:
     appleClangVersions: "10"
     splitByBuildTypes: "true"
+    requireMoreDiskSpace: "true"
